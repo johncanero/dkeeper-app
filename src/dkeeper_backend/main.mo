@@ -9,6 +9,7 @@ actor DKeeper {
         content: Text;
     };
 
+    // Add stable so the list would persist
     stable var notes: List.List<Note> = List.nil<Note>();
 
     // CREATE
