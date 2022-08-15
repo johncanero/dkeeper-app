@@ -32,6 +32,7 @@ actor DKeeper {
         return List.toArray(notes);
     };
 
+    // DELETE 
     public func removeNote(id: Nat) {
         //take drop append
         let listFront = List.take(notes, id);
