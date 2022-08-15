@@ -3,7 +3,7 @@ import Debug "mo:base/Debug";
 
 actor DKeeper {
     
-    // Motoko Language = CRUD
+    // Motoko Language = CRUD (Backend)
     public type Note = {
         title: Text;
         content: Text;
@@ -23,6 +23,10 @@ actor DKeeper {
         Debug.print(debug_show(notes));
     };
 
+    // QUERY = READ
+    public query func readNotes(): async [Note] {
+        return List.toArray(notes);
+    };
 
     public query func readNotes(): async [Note] {
         return List.toArray(notes);

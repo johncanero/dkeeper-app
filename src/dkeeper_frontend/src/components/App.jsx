@@ -15,6 +15,7 @@ function App() {
     });
   }
 
+  // Using the Effect Hook and fetchData()
   useEffect(() => {
     console.log("useEffect is triggered")
     fetchData();
