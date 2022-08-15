@@ -8,6 +8,7 @@ import { dkeeper_backend } from "../../../declarations/dkeeper_backend";
 function App() {
   const [notes, setNotes] = useState([]);
 
+  // dkeeper_backend.createNote
   function addNote(newNote) {
     setNotes(prevNotes => {
       dkeeper_backend.createNote(newNote.title, newNote.content)
